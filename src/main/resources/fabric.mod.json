@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
 	"id": "dungeons-pots",
-	"version": "${mod_version}",
-	"name": "${mod_name}",
+	"version": "${version}",
+	"name": "Dungeons Pots",
 	"description": "TODO",
 	"authors": [
 		"Riphidura"
@@ -30,11 +30,11 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=${loader_version}",
-		"minecraft": "~${minecraft_version}",
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.5",
 		"java": ">=21",
 		"fabric-api": "*",
-		"sherdsapi":">=${sherdsapi_version}"
+		"sherdsapi":">=6.1.2"
 	},
 	"suggests": {
 	}
