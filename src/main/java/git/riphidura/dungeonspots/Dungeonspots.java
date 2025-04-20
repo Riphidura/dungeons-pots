@@ -5,7 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Dungeonspots implements ModInitializer {
+public class DungeonsPots implements ModInitializer {
 	public static final String MOD_ID = "dungeons-pots";
 
 	// This logger is used to write text to the console and the log file.
@@ -19,6 +19,6 @@ public class Dungeonspots implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		// LOGGER.info("Hello Fabric world!");
 	}
 }

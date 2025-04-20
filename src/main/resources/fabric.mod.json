@@ -1,25 +1,25 @@
 {
 	"schemaVersion": 1,
 	"id": "dungeons-pots",
-	"version": "${version}",
-	"name": "dungeons-pots",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"version": "${mod_version}",
+	"name": "${mod_name}",
+	"description": "TODO",
 	"authors": [
-		"Me!"
+		"Riphidura"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Riphidura/dungeons-pots",
+		"sources": "https://github.com/Riphidura/dungeons-pots"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0",
 	"icon": "assets/dungeons-pots/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"git.riphidura.dungeonspots.Dungeonspots"
+			"git.riphidura.dungeonspots.DungeonsPots"
 		],
 		"client": [
-			"git.riphidura.dungeonspots.DungeonspotsClient"
+			"git.riphidura.dungeonspots.DungeonsPotsClient"
 		]
 	},
 	"mixins": [
@@ -30,12 +30,12 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.16.13",
-		"minecraft": "~1.21.5",
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"sherdsapi":">=${sherdsapi_version}"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }
