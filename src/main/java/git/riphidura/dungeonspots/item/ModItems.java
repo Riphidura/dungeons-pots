@@ -2,6 +2,7 @@ package git.riphidura.dungeonspots.item;
 
 import java.util.function.Function;
 
+import dev.thomasglasser.sherdsapi.api.SherdsApiDataComponents;
 import git.riphidura.dungeonspots.DungeonsPots;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -14,7 +15,7 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItems {
-	public static final Item MY_SHERD = register("my_sherd", Item::new, new Item.Settings());
+	public static final Item MY_SHERD = register("my_sherd", Item::new, new Item.Settings().component(SherdsApiDataComponents.SHERD_PATTERN.get(), Identifier.of(DungeonsPots.MOD_ID, "my_sherd")));
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
