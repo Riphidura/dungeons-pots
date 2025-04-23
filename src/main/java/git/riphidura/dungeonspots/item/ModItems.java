@@ -16,8 +16,8 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItems {
-	public static final Item VAULT_SHERD = register("vault_sherd", Item::new, new Item.Settings().
-			component(SherdsApiDataComponents.SHERD_PATTERN.get(), Identifier.of(DungeonsPots.MOD_ID, "vault_sherd")));
+	public static final Item VAULT_SHERD = register("vault_pottery_sherd", Item::new, new Item.Settings().
+			component(SherdsApiDataComponents.SHERD_PATTERN.get(), Identifier.of(DungeonsPots.MOD_ID, "vault_pottery_sherd")));
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
