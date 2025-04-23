@@ -1,6 +1,6 @@
 {
     "model": {
       "type": "minecraft:model",
-      "model": "dungeons-pots:item/my_sherd"
+      "model": "dungeons-pots:item/vault_sherd"
     }
   }

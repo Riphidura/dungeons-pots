@@ -13,13 +13,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 
 
 public class ModItems {
-	public static final Item MY_SHERD = register("my_sherd", Item::new, new Item.Settings().
-			component(SherdsApiDataComponents.SHERD_PATTERN.get(), Identifier.of(DungeonsPots.MOD_ID, "my_sherd"))
-			.rarity(Rarity.UNCOMMON));
+	public static final Item VAULT_SHERD = register("vault_sherd", Item::new, new Item.Settings().
+			component(SherdsApiDataComponents.SHERD_PATTERN.get(), Identifier.of(DungeonsPots.MOD_ID, "vault_sherd")));
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
@@ -36,6 +34,6 @@ public class ModItems {
 
 	public static void initialize() {
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-		.register((itemGroup) -> itemGroup.addAfter(Items.SNORT_POTTERY_SHERD, ModItems.MY_SHERD));
+		.register((itemGroup) -> itemGroup.addAfter(Items.SNORT_POTTERY_SHERD, ModItems.VAULT_SHERD));
 	}
 }

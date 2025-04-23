@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "dungeons-pots:item/my_sherd"
+        "layer0": "dungeons-pots:item/vault_sherd"
     }
 }
