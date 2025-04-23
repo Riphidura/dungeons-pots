@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        " # "
+    ],
+    "key": {
+        "#": "minecraft:gold_nugget",
+        "B": "minecraft:brick"
+    },
+    "result": {
+        "count": 1,
+        "id": "dungeons-pots:wave_pottery_sherd"
+    }
+}

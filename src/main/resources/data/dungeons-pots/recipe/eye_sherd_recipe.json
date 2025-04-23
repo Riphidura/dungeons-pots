@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " g ",
+        "gBg",
+        " g "
+    ],
+    "key": {
+        "g": "minecraft:gold_ingot",
+        "B": "minecraft:brick"
+    },
+    "result": {
+        "id": "dungeons-pots:eye_pottery_sherd",
+        "count": 1
+    }
+}
