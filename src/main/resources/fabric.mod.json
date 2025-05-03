@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"git.riphidura.dungeonspots.DungeonsPotsClient"
+		],
+		"fabric-datagen": [
+			"git.riphidura.dungeonspots.datagen.DungeonsPotsDataGenerator"
 		]
 	},
 	"mixins": [
